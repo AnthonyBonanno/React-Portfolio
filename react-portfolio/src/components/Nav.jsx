@@ -10,7 +10,7 @@ export default function Nav() {
         <Link key={1} className="nav-link text-dark" id="menu-item" to="/">
           About Me
         </Link>,
-        <Link key={2} className="nav-link text-dark" to="/Contact">
+        <Link key={2} className="nav-link text-dark" id="menu-item" to="/Contact">
           Contact
         </Link>,
         <Link key={3} className="nav-link text-dark" to="/Portfolio">

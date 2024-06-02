@@ -7,13 +7,15 @@ function App() {
   // The Outlet component will conditionally swap between the different pages according to the URL
   return (
     <>
-      <Nav />
+      <nav className="lead text-primary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-3">
+        <Nav />
+      </nav>
       
-      <div className="container">
+      <div className="p-3 text-primary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-3 flex-row space-between">
         <Outlet />
       </div>
 
-      <div className="container">
+      <div className="lead text-primary-emphasis bg-secondary-subtle border border-secondary-subtle rounded-3">
         <Footer />
       </div>
     </>
