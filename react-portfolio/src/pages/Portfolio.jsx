@@ -1,4 +1,7 @@
 import ProjectCard from "../components/Project/ProjectCard";
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
 const Portfolio = () => {
   const projects = [
@@ -26,40 +29,40 @@ const Portfolio = () => {
     {
       id: 4,
       title: "Employee Tracker CLI",
-      description: "A CLI application for managing your employees",
+      description: "A CLI application for managing your employees.",
       imageSrc: "./img/employee-db.png",
       link: "https://github.com/eddiespag-hetti/EmployeeDB_CLI",
     },
     {
       id: 5,
-      title: "Employee Tracker CLI",
-      description: "A CLI application for managing your employees",
+      title: "Readme Generator",
+      description: "Generates readme file based off of user input.",
       imageSrc: "./img/employee-db.png",
       link: "https://github.com/AnthonyBonanno/Readme-Generator",
     },
   ];
 
   return (
-    <section>
+    <Container>
       <h1 className="portfolio-heading">Portfolio</h1>
-      <div className="project-cards">
-        <p className="port-para">Here is what I have been working on</p>
-        <div className="row">
+      <div>
+        <p>Here is what I have been working on:</p>
+        <Row className="row">
           {projects.map((project) => (
-            <div className="col" key={project.id}>
+            <Col key={project.id}>
               <ProjectCard
                 title={project.title}
                 description={project.description}
                 imageSrc={project.imageSrc}
                 link={project.link}
               />
-            </div>
+            </Col>
           )
         )
     }
-        </div>
+        </Row>
       </div>
-    </section>
+    </Container>
   );
 };
 
