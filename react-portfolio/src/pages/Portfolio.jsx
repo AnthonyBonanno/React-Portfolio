@@ -9,7 +9,7 @@ const Portfolio = () => {
       id: 1,
       title: "Logo Generator",
       description: "An app that can create a small logo with text and colour.",
-      imageSrc: "./img/secure-scribe.png",
+      imageSrc: "./src/assets/Captuasdasdre.PNG",
       link: "https://github.com/AnthonyBonanno/Logo-Generator",
     },
     {
@@ -44,10 +44,10 @@ const Portfolio = () => {
 
   return (
     <Container>
-      <h1 className="portfolio-heading">Portfolio</h1>
+      <h1>Portfolio</h1>
       <div>
         <p>Here is what I have been working on:</p>
-        <Row className="row">
+        <Row>
           {projects.map((project) => (
             <Col key={project.id}>
               <ProjectCard

@@ -3,7 +3,7 @@ import Form from "react-bootstrap/Form";
 export default function Contact() {
   return (
     <Form>
-      <h2>Contact Me!</h2>
+      <h1>Contact Me!</h1>
       <Form.Group className="mb-3">
         <Form.Label>Name:</Form.Label>
         <Form.Control type="name" placeholder="Enter name" />
