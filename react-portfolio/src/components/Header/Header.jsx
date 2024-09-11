@@ -1,13 +1,13 @@
 import Nav from "../Nav";
-import './Header.css';
+import "./Header.css";
 
 const Header = () => {
-    return (
-      <div className="header-container">
+  return (
+    <div className="header-container">
       <h1>Anthony Bonanno</h1>
       <Nav />
-      </div>
-    );
-  }
-  
-  export default Header;
+    </div>
+  );
+};
+
+export default Header;

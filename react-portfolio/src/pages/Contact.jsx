@@ -1,7 +1,50 @@
 import Form from "react-bootstrap/Form";
+import { useState } from "react";
+import { validateEmail } from "../../utils/helpers";
+import Container from "react-bootstrap/esm/Container";
 
-export default function Contact() {
+function Contact() {
+  // const [contactForm, setContactForm] = useState({
+  //   name: "",
+  //   email: "",
+  //   message: "",
+  // });
+
+  // const [error, setError] = useState("");
+  // const { name, email, message } = contactForm;
+
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (!error) {
+  //     console.log("form submitted", contactForm);
+  //   }
+  // };
+
+  // const handleChange = (e) => {
+  //   if (e.target.name === "email") {
+  //     const validEmail = validateEmail(e.target.name);
+  //     if (!validEmail) {
+  //       setErrorMessage("Invalid Email.");
+  //     } else {
+  //       setErrorMessage("");
+  //     }
+  //   } else {
+  //     if (!e.target.value.length) {
+  //       setErrorMessage(`${e.target.name} is required.`);
+  //     } else {
+  //       setErrorMessage("");
+  //     }
+  //   }
+  //   if (!setErrorMessage) {
+  //     setContactForm({ ...contactForm, [e.target.name]: e.target.value });
+  //     console.log("Handle Form", contactForm);
+  //   }
+  // }
+
   return (
+    // <Container>
+
+    // </Container>
     <Form>
       <h1>Contact Me!</h1>
       <Form.Group className="mb-3">
@@ -20,3 +63,5 @@ export default function Contact() {
     </Form>
   );
 }
+
+export default Contact();
