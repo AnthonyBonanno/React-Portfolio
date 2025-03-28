@@ -1,36 +1,23 @@
 .project-card {
   position: relative;
-  width: 100%;
-  max-width: 500px;
-  height: 300px;
-  margin: 30px;
-}
-
-.project-card h2 {
-  margin-bottom: 15px;
-  font-size: 2em;
-  color: grey;
-}
-
-.project-card p {
-  color: grey;
+  overflow: hidden;
 }
 
 .project-image {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.3;
 }
 
 .project-text {
-  color: var(--secondary);
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  right: 0px;
-  padding: 50px;
-  z-index: 900;
-  opacity: 0;
-  transition: all .5s ease-in-out;
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
 }

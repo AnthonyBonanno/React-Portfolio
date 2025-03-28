@@ -10,11 +10,14 @@ const ProjectCard = ({ project }) => {
           <img src={imageSrc} alt={title} className="project-image" />
         )}
         <div className="project-text">
-          <h2>{title}</h2>
+          <h3>
+            <a href={repo}>{title}</a>
+            &nbsp;
+            <a href={repo}>
+              <i className="fab fa-github" />
+            </a>
+          </h3>
           <p>{description}</p>
-          <a href={repo}>
-            <i className="fab fa-github" />
-          </a>
         </div>
       </div>
     </div>
